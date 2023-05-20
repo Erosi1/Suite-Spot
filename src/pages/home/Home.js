@@ -1,8 +1,13 @@
 import './Home.css'
+import Navbar from '../../components/navbar/navbar'
+import Header from '../../components/header/header'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <Navbar/>
+      <Header/>
+      </div>
   )
 }
 
