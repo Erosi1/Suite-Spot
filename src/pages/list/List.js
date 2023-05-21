@@ -1,8 +1,12 @@
 import React from 'react'
-
+import Navbar from '../../components/navbar/navbar'
+import Header from '../../components/header/header'
 const List = () => {
   return (
-    <div>List</div>
+    <div>
+      <Navbar/>
+      <Header type='list'/>
+    </div>
   )
 }
 
