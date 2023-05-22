@@ -1,19 +1,17 @@
-import './navbar.css'
+import "./navbar.css"
 
-const navbar = () => {
+const Navbar = () => {
   return (
-    <div className='navbar'>
-     <div className='navContainer'>
-        <span className='logo'>Booking</span>
-        <div className='navItems'>
-            <button className='navButton'>Register</button>
-            <button className='navButton'>Login</button>
+    <div className="navbar">
+      <div className="navContainer">
+        <span className="logo">SuiteSpot</span>
+        <div className="navItems">
+          <button className="navButton">Register</button>
+          <button className="navButton">Login</button>
         </div>
-     </div>
-
-
+      </div>
     </div>
   )
 }
 
-export default navbar
+export default Navbar
