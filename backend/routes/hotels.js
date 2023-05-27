@@ -1,10 +1,20 @@
 import express from 'express'
+import Hotel from '../models/hotel.js'
+import {createHotel, deleteHotel,updateHotel,getHotelId, getHotels}  from '../controllers/hotel.js'
+
 
 const router = express.Router();
 
-router.get("/",(req,res)=>{ 
-    res.send("Hello this is Hotel endpoint")
-})
+//Create
+router.post("/",createHotel);
+//Update
+router.put("/:id",updateHotel);  
+//Delete
+router.delete("/:id",deleteHotel) 
+//Get {id}
+router.get("/:id",getHotelId) 
+//Get all hotels
+router.get("/",getHotels) 
 
 
 
