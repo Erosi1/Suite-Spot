@@ -55,7 +55,7 @@ const Reserve = ({ setOpen, hotelId }) => {
     try {
       await Promise.all(
         selectedRooms.map((roomId) => {
-          const res = axios.put(`/rooms/availability/${roomId}`, {
+          const res = axios.put(`http://localhost:8800/rooms/availability/${roomId}`, {
             dates: alldates,
           });
           return res.data;
@@ -84,7 +84,7 @@ const Reserve = ({ setOpen, hotelId }) => {
                 <div className="rMax">
                   Max people: <b>{item.maxPeople}</b>
                 </div>
-                <div className="rPrice">{item.price}</div>
+                <div className="rPrice">Price:{item.price}</div>
               </div>
               <div className="rSelectRooms">
                 {item.roomNumbers.map((roomNumber) => (
